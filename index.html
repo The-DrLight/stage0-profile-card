@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <article class="profile-card" data-testid="test-profile-card">
+
+        <figure class="profile-avatar-container">
+            <img 
+                src="assests/avatar.jpg" 
+                alt="A photo of the user, Daniel" 
+                class="profile-avatar"
+                data-testid="test-user-avatar"
+            >
+            </figure>
+
+        <div class="profile-content">
+            
+            <header>
+                <h2 class="user-name" data-testid="test-user-name">
+                    Daniel Olorunda
+                </h2>
+                <p class="user-bio" data-testid="test-user-bio">
+                    Software developer, student of Computer Engineering at UNILAG, passionate about tech, music, and business innovation.
+                </p>
+            </header>
+            
+            <section class="time-section">
+                <h3>Current Time (ms)</h3>
+                <p class="user-time" data-testid="test-user-time">
+                    1730000000000
+                </p>
+            </section>
+
+            <nav class="social-links-container" data-testid="test-user-social-links" aria-label="Social media links">
+                <ul>
+                    <li>
+                        <a href="https://github.com/The-DrLight" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a>
+                    </li>
+                    <li>
+                        <a href="https://x.com/DrLightHouse_HQ" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://linkedin.com/in/daniel-toluwani-olorunda" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <section class="hobbies-section">
+                <h3>Hobbies</h3>
+                <ul class="user-hobbies" data-testid="test-user-hobbies">
+                    <li>Playing Guitar</li>
+                    <li>Reading Books</li>
+                    <li>Building Porjects</li>
+                </ul>
+            </section>
+
+            <section class="dislikes-section">
+                <h3>Dislikes</h3>
+                <ul class="user-dislikes" data-testid="test-user-dislikes">
+                    <li>Procastination</li>
+                    <li>Disorganization</li>
+                    <li>Slow Internet</li>
+                </ul>
+            </section>
+
+        </div>
+    </article>
+
+    <script src="script.js"></script>
+</body>
+</html>

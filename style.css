@@ -1,0 +1,111 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+
+.profile-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    max-width: 800px; 
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+}
+
+
+
+.profile-avatar-container {
+    margin: 0; 
+    text-align: center; 
+}
+
+.profile-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 4px solid #007bff;
+}
+
+
+.user-name {
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.user-bio {
+    color: #555;
+    line-height: 1.5;
+}
+
+
+.social-links-container, .hobbies-section, .dislikes-section {
+    margin-top: 15px;
+}
+
+.social-links-container ul, .hobbies-section ul, .dislikes-section ul {
+    list-style: none; 
+    padding: 0;
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 15px;
+}
+
+.hobbies-section ul, .dislikes-section ul {
+    flex-direction: column; 
+    list-style: disc; 
+    margin-left: 20px;
+}
+
+
+a:focus, button:focus {
+    outline: 3px solid orange; 
+    outline-offset: 2px;
+}
+
+.social-links-container a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.social-links-container a:hover {
+    text-decoration: underline;
+}
+
+
+@media (min-width: 600px) {
+    .profile-card {
+        flex-direction: row;
+        align-items: flex-start; 
+        padding: 30px;
+    }
+    
+    .profile-avatar-container {
+        flex-basis: 200px;
+        flex-shrink: 0; 
+        text-align: left; 
+    }
+
+    .profile-content {
+        flex-grow: 1;
+        padding-left: 20px; 
+    }
+}
